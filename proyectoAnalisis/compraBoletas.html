@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCompraBoletas.css">
+    <title>Registro - Forma Collective</title>
+</head>
+<body>
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    
+    <a href="index.html"><button class="back-btn">← VOLVER</button></a>
+
+    <div class="register-container">
+        <div class="logo">
+            <h1>Compra tu boleta</h1>
+            <p>Compra tu boleta de jazz y disfruta</p>
+        </div>
+
+        <form id="registerForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">Nombre</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Apellido</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Tu apellido" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" required>
+                <div class="password-strength">
+                    <div class="password-strength-bar" id="strengthBar"></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Escoge fecha</label>
+                <input type="date" id="confirmPassword" name="confirmPassword" placeholder="Escoge tu fecha" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="profession">Metodo de pago</label>
+                    <select id="profession" name="profession" required>
+                        <option value="">Selecciona...</option>
+                        <option value="artista">Efectivo</option>
+                        <option value="musico">Tarjeta de credito</option>
+                        <option value="disenador">Tarjeta de debito</option>
+                    </select>
+                </div>
+                
+</body>
+</html>
